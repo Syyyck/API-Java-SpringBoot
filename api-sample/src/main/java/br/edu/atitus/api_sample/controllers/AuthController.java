@@ -20,9 +20,12 @@ import br.edu.atitus.api_sample.services.UserService;
 public class AuthController {
 	private final UserService service;
 	
-	public AuthController() {
+	//Injeção de dependencida via método construtor
+	// O responstavel por criar um objeto Auth controller é o Spring
+	//
+	public AuthController(UserService service) {
 		super();
-		this.service = new UserService();
+		this.service = service;
 	}
 
 	//Criando um metodo de Entiddade de Resposta
