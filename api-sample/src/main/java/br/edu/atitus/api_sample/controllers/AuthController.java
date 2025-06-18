@@ -49,7 +49,6 @@ public class AuthController {
 		return ResponseEntity.ok(JWTUtils.generateToken(signin.email()));
 	}
 	
-
 	@PostMapping("/signup")
 	public ResponseEntity<UserEntity> signup(@RequestBody SignupDTO dto) throws Exception{
 		// Criamos a entidade (novo objeto)

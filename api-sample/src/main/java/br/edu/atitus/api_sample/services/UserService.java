@@ -52,7 +52,7 @@ public class UserService implements UserDetailsService{
 		repository.save(user);
 		
 		return user;
-	}
+		}
 
 	@Override
 	public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
